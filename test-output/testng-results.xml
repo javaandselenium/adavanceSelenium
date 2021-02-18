@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[price Is dispalyed ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-02-18T10:42:41Z" name="Default suite" finished-at="2021-02-18T10:42:56Z" duration-ms="14447">
+    <groups>
+    </groups>
+    <test started-at="2021-02-18T10:42:41Z" name="Default test" finished-at="2021-02-18T10:42:56Z" duration-ms="14447">
+      <class name="com.testscripts.AddtoCart">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.testscripts.AddtoCart@65b3f4a4]" started-at="2021-02-18T10:42:40Z" name="configBS" finished-at="2021-02-18T10:42:41Z" duration-ms="1553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.testscripts.AddtoCart@65b3f4a4]" started-at="2021-02-18T10:42:41Z" name="configBM" finished-at="2021-02-18T10:42:53Z" duration-ms="11801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="addingcourseTocart()[pri:0, instance:com.testscripts.AddtoCart@65b3f4a4]" started-at="2021-02-18T10:42:53Z" name="addingcourseTocart" finished-at="2021-02-18T10:42:55Z" duration-ms="1834" status="FAIL">
+          <exception class="org.apache.poi.EmptyFileException">
+            <message>
+              <![CDATA[The supplied file was empty (zero bytes long)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
+at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:74)
+at org.apache.poi.util.IOUtils.peekFirst8Bytes(IOUtils.java:57)
+at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:135)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:177)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:149)
+at com.Skillrary.genericlib.FileUtilies.getExcelreadData(FileUtilies.java:64)
+at com.Skillrary.genericlib.FileUtilies.compare(FileUtilies.java:83)
+at com.testscripts.AddtoCart.addingcourseTocart(AddtoCart.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.poi.EmptyFileException -->
+          <reporter-output>
+            <line>
+              <![CDATA[price Is dispalyed ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addingcourseTocart -->
+        <test-method is-config="true" signature="closeapp(org.testng.ITestResult)[pri:0, instance:com.testscripts.AddtoCart@65b3f4a4]" started-at="2021-02-18T10:42:55Z" name="closeapp" finished-at="2021-02-18T10:42:56Z" duration-ms="762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addingcourseTocart status=FAILURE method=AddtoCart.addingcourseTocart()[pri:0, instance:com.testscripts.AddtoCart@65b3f4a4] output=price Is dispalyed ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeapp -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.testscripts.AddtoCart@65b3f4a4]" started-at="2021-02-18T10:42:56Z" name="configAS" finished-at="2021-02-18T10:42:57Z" duration-ms="1052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- com.testscripts.AddtoCart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
